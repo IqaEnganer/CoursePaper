@@ -1,5 +1,6 @@
 package test;
 
+import com.codeborne.selenide.Configuration;
 import data.DataHelper;
 import jdk.jfr.Name;
 import org.junit.jupiter.api.BeforeEach;
@@ -19,7 +20,7 @@ public class TestBuyTour {
 
     @BeforeEach
     public void setUp() {
-        //Configuration.headless = true;
+        Configuration.headless = true;
         open("http://localhost:8080/");
     }
 
