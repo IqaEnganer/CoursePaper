@@ -2,7 +2,6 @@ Thumbs.db*
 .DS_Store*
 HELP.md
 ../../CoursePaper/.gradle
-build/
 target/
 ./src/main/java/comparators/ReverseCollection.java
 
@@ -48,5 +47,5 @@ out/
 !**/src/test/**
 !artifacts/
 !gate-simulator
-build
+!build
 © 2021 GitHub, Inc.

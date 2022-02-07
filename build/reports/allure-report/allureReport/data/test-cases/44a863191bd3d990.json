@@ -1,0 +1,77 @@
+{
+  "uid" : "44a863191bd3d990",
+  "name" : "ShouldAppearInTheDatabaseWithStatus()",
+  "fullName" : "test.TestBuyTour.ShouldAppearInTheDatabaseWithStatus",
+  "historyId" : "3f7e704fdb3ee1fb12dc0cb0350cb3a8",
+  "time" : {
+    "start" : 1644256961746,
+    "stop" : 1644256965575,
+    "duration" : 3829
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1644256961760,
+      "stop" : 1644256964105,
+      "duration" : 2345
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:test.TestBuyTour]/[method:ShouldAppearInTheDatabaseWithStatus()]"
+  }, {
+    "name" : "host",
+    "value" : "MSI"
+  }, {
+    "name" : "thread",
+    "value" : "2568@MSI.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "test.TestBuyTour"
+  }, {
+    "name" : "testClass",
+    "value" : "test.TestBuyTour"
+  }, {
+    "name" : "testMethod",
+    "value" : "ShouldAppearInTheDatabaseWithStatus"
+  }, {
+    "name" : "suite",
+    "value" : "test.TestBuyTour"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "44a863191bd3d990.json",
+  "parameterValues" : [ ]
+}

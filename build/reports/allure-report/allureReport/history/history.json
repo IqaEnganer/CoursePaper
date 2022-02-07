@@ -1,0 +1,387 @@
+{
+  "3f7e704fdb3ee1fb12dc0cb0350cb3a8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bcc0703e2b47fedd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257046673,
+        "stop" : 1644257047668,
+        "duration" : 995
+      }
+    } ]
+  },
+  "77b20a0ded30855ba196f61b4c023daa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3d23a8b82a5646cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257031680,
+        "stop" : 1644257032586,
+        "duration" : 906
+      }
+    } ]
+  },
+  "ab1a691140cbf187e27f657d40b97089" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4de7dcb54a894e07",
+      "status" : "failed",
+      "statusDetails" : "Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}\r\nExpected: visible\r\nScreenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644256993673.0.png\r\nPage source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644256993673.0.html\r\nTimeout: 10 s.\r\nCaused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}\r\nExpected: exact text 'Ошибка! Банк отказал в проведении операции.'\r\nTimeout: 0 ms.",
+      "time" : {
+        "start" : 1644256982777,
+        "stop" : 1644256993767,
+        "duration" : 10990
+      }
+    } ]
+  },
+  "913d3e697222cc87c8374b984374c5d3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d76bf57d32a470f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644256993794,
+        "stop" : 1644257001834,
+        "duration" : 8040
+      }
+    } ]
+  },
+  "cb5700c63f9ae07fa7dc21564e1d1618" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4d19a7004913cb90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257006941,
+        "stop" : 1644257007875,
+        "duration" : 934
+      }
+    } ]
+  },
+  "da516c3e297305c79a6f74d1ea9829ef" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6a28adcde3c4664",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257035530,
+        "stop" : 1644257036529,
+        "duration" : 999
+      }
+    } ]
+  },
+  "c8aea0b867dd7d4f6efeca2a9d25741a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d2f94df8950702c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257030707,
+        "stop" : 1644257031666,
+        "duration" : 959
+      }
+    } ]
+  },
+  "338e62dc0ef2fa0c6d9c53bf61587e40" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6ec88f92f76c4497",
+      "status" : "failed",
+      "statusDetails" : "Element not found {[class='input__sub'][0]}\r\nExpected: visible\r\nScreenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257046521.4.png\r\nPage source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257046521.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class='input__sub']\"}",
+      "time" : {
+        "start" : 1644257041632,
+        "stop" : 1644257046656,
+        "duration" : 5024
+      }
+    } ]
+  },
+  "b5a49f104b9351f54f37343e25381276" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5fd470a8d823a19a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257019110,
+        "stop" : 1644257020048,
+        "duration" : 938
+      }
+    } ]
+  },
+  "cb93ebd74c5a407eddbeb8777ed0a28e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6405d635b2b4dab3",
+      "status" : "failed",
+      "statusDetails" : "Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}\r\nExpected: visible\r\nScreenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257018972.2.png\r\nPage source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257018972.2.html\r\nTimeout: 10 s.\r\nCaused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}\r\nExpected: exact text 'Ошибка! Банк отказал в проведении операции.'\r\nTimeout: 0 ms.",
+      "time" : {
+        "start" : 1644257007896,
+        "stop" : 1644257019083,
+        "duration" : 11187
+      }
+    } ]
+  },
+  "67efac10c12d5d244f51b7aa21e5e2b1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4db1f982208e51ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257034540,
+        "stop" : 1644257035514,
+        "duration" : 974
+      }
+    } ]
+  },
+  "9b1a3096a1802f9cbf647c9c148206fc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc0f5dba941a9e91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257047684,
+        "stop" : 1644257048620,
+        "duration" : 936
+      }
+    } ]
+  },
+  "86addced6f8d2224d12bff779dd3c9c2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dca298926baf2752",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257033576,
+        "stop" : 1644257034525,
+        "duration" : 949
+      }
+    } ]
+  },
+  "cfb6183ff349b937199e4dadb1c02cb1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "70d94eb249d6e0d7",
+      "status" : "failed",
+      "statusDetails" : "Element not found {[class='input__sub'][0]}\r\nExpected: visible\r\nScreenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257041463.3.png\r\nPage source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257041463.3.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[class='input__sub']\"}",
+      "time" : {
+        "start" : 1644257036548,
+        "stop" : 1644257041613,
+        "duration" : 5065
+      }
+    } ]
+  },
+  "ddc1a732a4917c6099101d7af35fdf7e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3ee920700c6b8fb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644256981773,
+        "stop" : 1644256982755,
+        "duration" : 982
+      }
+    } ]
+  },
+  "2bc1735059e9eb78d9e99881df5fd116" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c84b1c795eaf5d9",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'Неверный формат' {[class='input__sub'][0]}\r\nElement: '<span class=\"input__sub\">Поле обязательно для заполнения</span>'\r\nScreenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257006838.1.png\r\nPage source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257006838.1.html\r\nTimeout: 4 s.",
+      "time" : {
+        "start" : 1644257001851,
+        "stop" : 1644257006924,
+        "duration" : 5073
+      }
+    } ]
+  },
+  "a0acb39b4e7e1e6c83b65ebe94cfacb7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e34031139bff0ed4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257020063,
+        "stop" : 1644257030692,
+        "duration" : 10629
+      }
+    } ]
+  },
+  "9715507a6db2969c857dbb95b3b9c0bd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e41c36a890dd877",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644256977124,
+        "stop" : 1644256980645,
+        "duration" : 3521
+      }
+    } ]
+  },
+  "e74d27fdd45f87f587274f9576379870" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e24393431ee0479d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644257032603,
+        "stop" : 1644257033562,
+        "duration" : 959
+      }
+    } ]
+  },
+  "d5a5cfd1e733393ad529daafc060ed54" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "63295a3c46f95c6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644256980748,
+        "stop" : 1644256981739,
+        "duration" : 991
+      }
+    } ]
+  }
+}

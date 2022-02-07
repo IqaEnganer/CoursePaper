@@ -1,0 +1,201 @@
+[ {
+  "uid" : "d76bf57d32a470f3",
+  "name" : "ShouldAppearInTheDatabaseWithStatusApproved()",
+  "time" : {
+    "start" : 1644256993794,
+    "stop" : 1644257001834,
+    "duration" : 8040
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a28adcde3c4664",
+  "name" : "shouldNotificationAboutAnEmptyMonthFieldWillAppear2()",
+  "time" : {
+    "start" : 1644257035530,
+    "stop" : 1644257036529,
+    "duration" : 999
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e34031139bff0ed4",
+  "name" : "ShouldAppearInTheDatabaseCreditWithStatusApproved()",
+  "time" : {
+    "start" : 1644257020063,
+    "stop" : 1644257030692,
+    "duration" : 10629
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d19a7004913cb90",
+  "name" : "shouldNotificationAboutAnEmptyYearFieldWillAppear()",
+  "time" : {
+    "start" : 1644257006941,
+    "stop" : 1644257007875,
+    "duration" : 934
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dca298926baf2752",
+  "name" : "shouldNotificationAboutAnEmptyHolderFieldWillAppear()",
+  "time" : {
+    "start" : 1644257033576,
+    "stop" : 1644257034525,
+    "duration" : 949
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70d94eb249d6e0d7",
+  "name" : "shouldNotificationAboutAnEmptyMonthFieldWillAppear3()",
+  "time" : {
+    "start" : 1644257036548,
+    "stop" : 1644257041613,
+    "duration" : 5065
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e24393431ee0479d",
+  "name" : "shouldNotificationAboutAnEmptyCVCFieldWillAppear1()",
+  "time" : {
+    "start" : 1644257032603,
+    "stop" : 1644257033562,
+    "duration" : 959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c84b1c795eaf5d9",
+  "name" : "shouldNotificationAboutAnEmptyCVCFieldWillAppear()",
+  "time" : {
+    "start" : 1644257001851,
+    "stop" : 1644257006924,
+    "duration" : 5073
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fd470a8d823a19a",
+  "name" : "shouldNotificationWillAppearInvalidFormat1()",
+  "time" : {
+    "start" : 1644257019110,
+    "stop" : 1644257020048,
+    "duration" : 938
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ee920700c6b8fb8",
+  "name" : "shouldNotificationAboutAnEmptyYearFieldWillAppear3()",
+  "time" : {
+    "start" : 1644256981773,
+    "stop" : 1644256982755,
+    "duration" : 982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ec88f92f76c4497",
+  "name" : "shouldNotificationAboutAnEmptyHolderFieldWillAppear1()",
+  "time" : {
+    "start" : 1644257041632,
+    "stop" : 1644257046656,
+    "duration" : 5024
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d23a8b82a5646cf",
+  "name" : "shouldNotificationWillAppearEmptyCardNumberField()",
+  "time" : {
+    "start" : 1644257031680,
+    "stop" : 1644257032586,
+    "duration" : 906
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4db1f982208e51ab",
+  "name" : "shouldNotificationAboutAnEmptyMonthFieldWillAppear1()",
+  "time" : {
+    "start" : 1644257034540,
+    "stop" : 1644257035514,
+    "duration" : 974
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4de7dcb54a894e07",
+  "name" : "ShouldAppearInTheDatabaseWithStatusDeclined()",
+  "time" : {
+    "start" : 1644256982777,
+    "stop" : 1644256993767,
+    "duration" : 10990
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "63295a3c46f95c6f",
+  "name" : "shouldNotificationAboutAnEmptyYearFieldWillAppear2()",
+  "time" : {
+    "start" : 1644256980748,
+    "stop" : 1644256981739,
+    "duration" : 991
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc0f5dba941a9e91",
+  "name" : "shouldNotificationAboutAnEmptyMonthFieldWillAppear()",
+  "time" : {
+    "start" : 1644257047684,
+    "stop" : 1644257048620,
+    "duration" : 936
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6405d635b2b4dab3",
+  "name" : "ShouldAppearInTheDatabaseCreditWithStatusDeclined()",
+  "time" : {
+    "start" : 1644257007896,
+    "stop" : 1644257019083,
+    "duration" : 11187
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcc0703e2b47fedd",
+  "name" : "ShouldAppearInTheDatabaseWithStatus()",
+  "time" : {
+    "start" : 1644257046673,
+    "stop" : 1644257047668,
+    "duration" : 995
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2f94df8950702c5",
+  "name" : "shouldNotificationWillAppearInvalidFormat()",
+  "time" : {
+    "start" : 1644257030707,
+    "stop" : 1644257031666,
+    "duration" : 959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e41c36a890dd877",
+  "name" : "shouldNotificationAboutAnEmptyYearFieldWillAppear1()",
+  "time" : {
+    "start" : 1644256977124,
+    "stop" : 1644256980645,
+    "duration" : 3521
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

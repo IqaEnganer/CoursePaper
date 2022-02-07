@@ -1,0 +1,1 @@
+{"uuid":"da6cb8bb-5522-4722-bb9b-ec0f34ee3bbd","name":"ShouldAppearInTheDatabaseCreditWithStatusDeclined()","children":["1201dc38-e2bd-4c76-ba8f-dd04baf0bdd6"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1644257007897,"stop":1644257007921}],"afters":[],"start":1644257007895,"stop":1644257019084}

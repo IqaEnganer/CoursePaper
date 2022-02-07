@@ -1,0 +1,79 @@
+{
+  "uid" : "6a28adcde3c4664",
+  "name" : "shouldNotificationAboutAnEmptyMonthFieldWillAppear2()",
+  "fullName" : "test.TestBuyTour.shouldNotificationAboutAnEmptyMonthFieldWillAppear2",
+  "historyId" : "da516c3e297305c79a6f74d1ea9829ef",
+  "time" : {
+    "start" : 1644257035530,
+    "stop" : 1644257036529,
+    "duration" : 999
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1644257035531,
+      "stop" : 1644257035563,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:test.TestBuyTour]/[method:shouldNotificationAboutAnEmptyMonthFieldWillAppear2()]"
+  }, {
+    "name" : "host",
+    "value" : "MSI"
+  }, {
+    "name" : "thread",
+    "value" : "17488@MSI.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "test.TestBuyTour"
+  }, {
+    "name" : "testClass",
+    "value" : "test.TestBuyTour"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNotificationAboutAnEmptyMonthFieldWillAppear2"
+  }, {
+    "name" : "suite",
+    "value" : "test.TestBuyTour"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6a28adcde3c4664.json",
+  "parameterValues" : [ ]
+}

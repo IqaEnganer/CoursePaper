@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "6f2ffc81b57c0a546ee71f9f77253aee",
+    "name" : "test.TestBuyTour",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 20
+    }
+  } ]
+}
