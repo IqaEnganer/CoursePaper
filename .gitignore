@@ -48,6 +48,5 @@ out/
 !**/src/test/**
 !artifacts/
 !gate-simulator
-build/reports
-build/reports/allure-report
+build
 © 2021 GitHub, Inc.
