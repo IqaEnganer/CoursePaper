@@ -48,5 +48,5 @@ out/
 !**/src/test/**
 !artifacts/
 !gate-simulator
-build
+build/reports
 © 2021 GitHub, Inc.
