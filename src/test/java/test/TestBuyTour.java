@@ -20,12 +20,11 @@ public class TestBuyTour {
 
     @BeforeEach
     public void setUp() {
-        Configuration.headless = true;
+        //Configuration.headless = true;
         open("http://localhost:8080/");
     }
 
-    @Name("Проверка успешной покупки по карте" +
-            "Должен появится в базе данных ПОКУПОК со статусом ОДОБРЕНО. Так же UI проверка на успешность покупки")
+    @Name("Тест с пустыми полями")
     @Test
     public void ShouldAppearInTheDatabaseWithStatus() {
         // Ожидаемый результат при добавлении операции
