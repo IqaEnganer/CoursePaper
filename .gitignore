@@ -48,5 +48,5 @@ out/
 !**/src/test/**
 !artifacts/
 !gate-simulator
-!build/reports/tests/test/index.html
+build/reports/
 © 2021 GitHub, Inc.
