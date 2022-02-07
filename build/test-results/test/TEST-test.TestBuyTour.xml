@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.TestBuyTour" tests="20" skipped="0" failures="5" errors="0" timestamp="2022-02-07T16:24:15" hostname="MSI" time="63.203">
+<testsuite name="test.TestBuyTour" tests="20" skipped="0" failures="5" errors="0" timestamp="2022-02-07T18:02:57" hostname="MSI" time="71.497">
   <properties/>
-  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear1()" classname="test.TestBuyTour" time="3.723"/>
-  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear2()" classname="test.TestBuyTour" time="1.042"/>
-  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear3()" classname="test.TestBuyTour" time="1.074"/>
-  <testcase name="ShouldAppearInTheDatabaseWithStatusDeclined()" classname="test.TestBuyTour" time="11.094">
-    <failure message="Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251072462.0.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251072462.0.html&#13;&#10;Timeout: 10 s.&#13;&#10;Caused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: exact text 'Ошибка! Банк отказал в проведении операции.'&#13;&#10;Timeout: 0 ms." type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}
+  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear1()" classname="test.TestBuyTour" time="3.588"/>
+  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear2()" classname="test.TestBuyTour" time="0.993"/>
+  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear3()" classname="test.TestBuyTour" time="0.984"/>
+  <testcase name="ShouldAppearInTheDatabaseWithStatusDeclined()" classname="test.TestBuyTour" time="10.995">
+    <failure message="Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644256993673.0.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644256993673.0.html&#13;&#10;Timeout: 10 s.&#13;&#10;Caused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: exact text 'Ошибка! Банк отказал в проведении операции.'&#13;&#10;Timeout: 0 ms." type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}
 Expected: visible
-Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251072462.0.png
-Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251072462.0.html
+Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644256993673.0.png
+Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644256993673.0.html
 Timeout: 10 s.
 Caused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}
 Expected: exact text 'Ошибка! Банк отказал в проведении операции.'
@@ -127,12 +127,12 @@ Timeout: 0 ms.
 	... 104 more
 </failure>
   </testcase>
-  <testcase name="ShouldAppearInTheDatabaseWithStatusApproved()" classname="test.TestBuyTour" time="5.777"/>
-  <testcase name="shouldNotificationAboutAnEmptyCVCFieldWillAppear()" classname="test.TestBuyTour" time="5.067">
-    <failure message="Element should have text 'Неверный формат' {[class='input__sub'][0]}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251083373.1.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251083373.1.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Неверный формат' {[class='input__sub'][0]}
+  <testcase name="ShouldAppearInTheDatabaseWithStatusApproved()" classname="test.TestBuyTour" time="8.041"/>
+  <testcase name="shouldNotificationAboutAnEmptyCVCFieldWillAppear()" classname="test.TestBuyTour" time="5.075">
+    <failure message="Element should have text 'Неверный формат' {[class='input__sub'][0]}&#13;&#10;Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257006838.1.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257006838.1.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'Неверный формат' {[class='input__sub'][0]}
 Element: '&lt;span class=&quot;input__sub&quot;&gt;Поле обязательно для заполнения&lt;/span&gt;'
-Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251083373.1.png
-Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251083373.1.html
+Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257006838.1.png
+Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257006838.1.html
 Timeout: 4 s.
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
 	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
@@ -241,12 +241,12 @@ Timeout: 4 s.
 	at java.base/java.lang.Thread.run(Thread.java:829)
 </failure>
   </testcase>
-  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear()" classname="test.TestBuyTour" time="0.959"/>
-  <testcase name="ShouldAppearInTheDatabaseCreditWithStatusDeclined()" classname="test.TestBuyTour" time="11.152">
-    <failure message="Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251095482.2.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251095482.2.html&#13;&#10;Timeout: 10 s.&#13;&#10;Caused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: exact text 'Ошибка! Банк отказал в проведении операции.'&#13;&#10;Timeout: 0 ms." type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}
+  <testcase name="shouldNotificationAboutAnEmptyYearFieldWillAppear()" classname="test.TestBuyTour" time="0.936"/>
+  <testcase name="ShouldAppearInTheDatabaseCreditWithStatusDeclined()" classname="test.TestBuyTour" time="11.19">
+    <failure message="Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257018972.2.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257018972.2.html&#13;&#10;Timeout: 10 s.&#13;&#10;Caused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}&#13;&#10;Expected: exact text 'Ошибка! Банк отказал в проведении операции.'&#13;&#10;Timeout: 0 ms." type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}
 Expected: visible
-Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251095482.2.png
-Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251095482.2.html
+Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257018972.2.png
+Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257018972.2.html
 Timeout: 10 s.
 Caused by: Element not found {[class='notification__content'].findBy(exact text 'Ошибка! Банк отказал в проведении операции.')}
 Expected: exact text 'Ошибка! Банк отказал в проведении операции.'
@@ -365,19 +365,19 @@ Timeout: 0 ms.
 	... 104 more
 </failure>
   </testcase>
-  <testcase name="shouldNotificationWillAppearInvalidFormat1()" classname="test.TestBuyTour" time="1.092"/>
-  <testcase name="ShouldAppearInTheDatabaseCreditWithStatusApproved()" classname="test.TestBuyTour" time="3.556"/>
-  <testcase name="shouldNotificationWillAppearInvalidFormat()" classname="test.TestBuyTour" time="0.99"/>
-  <testcase name="shouldNotificationWillAppearEmptyCardNumberField()" classname="test.TestBuyTour" time="0.956"/>
-  <testcase name="shouldNotificationAboutAnEmptyCVCFieldWillAppear1()" classname="test.TestBuyTour" time="0.991"/>
-  <testcase name="shouldNotificationAboutAnEmptyHolderFieldWillAppear()" classname="test.TestBuyTour" time="0.979"/>
-  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear1()" classname="test.TestBuyTour" time="0.98"/>
-  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear2()" classname="test.TestBuyTour" time="1.021"/>
-  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear3()" classname="test.TestBuyTour" time="5.201">
-    <failure message="Element not found {[class='input__sub'][0]}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251111422.3.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251111422.3.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='input__sub'][0]}
+  <testcase name="shouldNotificationWillAppearInvalidFormat1()" classname="test.TestBuyTour" time="0.939"/>
+  <testcase name="ShouldAppearInTheDatabaseCreditWithStatusApproved()" classname="test.TestBuyTour" time="10.631"/>
+  <testcase name="shouldNotificationWillAppearInvalidFormat()" classname="test.TestBuyTour" time="0.96"/>
+  <testcase name="shouldNotificationWillAppearEmptyCardNumberField()" classname="test.TestBuyTour" time="0.908"/>
+  <testcase name="shouldNotificationAboutAnEmptyCVCFieldWillAppear1()" classname="test.TestBuyTour" time="0.96"/>
+  <testcase name="shouldNotificationAboutAnEmptyHolderFieldWillAppear()" classname="test.TestBuyTour" time="0.95"/>
+  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear1()" classname="test.TestBuyTour" time="0.975"/>
+  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear2()" classname="test.TestBuyTour" time="1.004"/>
+  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear3()" classname="test.TestBuyTour" time="5.068">
+    <failure message="Element not found {[class='input__sub'][0]}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257041463.3.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257041463.3.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='input__sub'][0]}
 Expected: visible
-Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251111422.3.png
-Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251111422.3.html
+Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257041463.3.png
+Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257041463.3.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}
 	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:61)
@@ -487,13 +487,13 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}
-  (Session info: chrome=97.0.4692.99)
+  (Session info: headless chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MSI', ip: '172.24.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\MSIO\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c40dc505c7f2aba1b80c7487fb94bbd
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\MSIO\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 52cba0cf0dcb55f6da071e2b2d9c5ece
 *** Element info: {Using=css selector, value=[class='input__sub']}
 	at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -516,11 +516,11 @@ Session ID: 7c40dc505c7f2aba1b80c7487fb94bbd
 	... 104 more
 </failure>
   </testcase>
-  <testcase name="shouldNotificationAboutAnEmptyHolderFieldWillAppear1()" classname="test.TestBuyTour" time="5.223">
-    <failure message="Element not found {[class='input__sub'][0]}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251116657.4.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251116657.4.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='input__sub'][0]}
+  <testcase name="shouldNotificationAboutAnEmptyHolderFieldWillAppear1()" classname="test.TestBuyTour" time="5.026">
+    <failure message="Element not found {[class='input__sub'][0]}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257046521.4.png&#13;&#10;Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257046521.4.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[class='input__sub'][0]}
 Expected: visible
-Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251116657.4.png
-Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644251116657.4.html
+Screenshot: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257046521.4.png
+Page source: file:/C:/repositgithub/Automatic/Diplom/build/reports/tests/1644257046521.4.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}
 	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:61)
@@ -630,13 +630,13 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class='input__sub']&quot;}
-  (Session info: chrome=97.0.4692.99)
+  (Session info: headless chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MSI', ip: '172.24.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\MSIO\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c40dc505c7f2aba1b80c7487fb94bbd
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\MSIO\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 52cba0cf0dcb55f6da071e2b2d9c5ece
 *** Element info: {Using=css selector, value=[class='input__sub']}
 	at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -659,14 +659,14 @@ Session ID: 7c40dc505c7f2aba1b80c7487fb94bbd
 	... 104 more
 </failure>
   </testcase>
-  <testcase name="ShouldAppearInTheDatabaseWithStatus()" classname="test.TestBuyTour" time="0.98"/>
-  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear()" classname="test.TestBuyTour" time="0.965"/>
+  <testcase name="ShouldAppearInTheDatabaseWithStatus()" classname="test.TestBuyTour" time="0.997"/>
+  <testcase name="shouldNotificationAboutAnEmptyMonthFieldWillAppear()" classname="test.TestBuyTour" time="0.937"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 28344
+  <system-err><![CDATA[Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 32033
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-февр. 07, 2022 7:24:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+февр. 07, 2022 9:02:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
