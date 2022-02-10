@@ -5,8 +5,8 @@ import data.DataHelper;
 import jdk.jfr.Name;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import page.BuyingTour;
-import page.Notifications;
+import pages.BuyingTour;
+import pages.Notifications;
 import sql.Sql;
 
 import static com.codeborne.selenide.Selenide.open;
