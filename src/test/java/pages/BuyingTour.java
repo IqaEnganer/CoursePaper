@@ -5,6 +5,8 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class BuyingTour {
@@ -12,50 +14,86 @@ public class BuyingTour {
     public BuyingTour() {
     }
 
+    private static final ElementsCollection notifications = $$("[class='input__sub']");
 
-    private final ElementsCollection cardHolder = $$("[class='input__control']");
+    private static final SelenideElement successBuy = $$("[class='notification__content']")
+            .findBy(Condition.exactText("Операция одобрена Банком."));
 
-    private final SelenideElement form = $$("[class='button__content']")
-            .findBy(Condition.text("Купить"));
+    private static final SelenideElement rejected = $$("[class='notification__content']")
+            .findBy(Condition.exactText("Ошибка! Банк отказал в проведении операции."));
 
-    private final SelenideElement formCredit = $$("[class='button__content']")
-            .findBy(Condition.text("Купить в кредит"));
+    private static final ElementsCollection cardHolder = $$("[class='input__control']");
 
-    private final SelenideElement cardNumber = $("[placeholder='0000 0000 0000 0000']");
+    private static final SelenideElement cardNumber = $("[placeholder='0000 0000 0000 0000']");
 
-    private final SelenideElement month = $$(".input__control")
+    private static final SelenideElement month = $$(".input__control")
             .findBy(Condition.attribute("placeholder", "08"));
 
-    private final SelenideElement year = $$(".input__control")
+    private static final SelenideElement year = $$(".input__control")
             .findBy(Condition.attribute("placeholder", "22"));
 
-    private final SelenideElement owner = $$("[class='input__control']").
+    private static final SelenideElement owner = $$("[class='input__control']").
             findBy(Condition.attribute("placeholder", "Владелец"));
 
-    private final SelenideElement cvc = $$(".input__control")
+    private static final SelenideElement cvc = $$(".input__control")
             .findBy(Condition.attribute("placeholder", "999"));
 
-    private final SelenideElement orderButton = $$("[class='button__content']")
+    private static final SelenideElement orderButton = $$("[class='button__content']")
             .findBy(Condition.text("Продолжить"));
 
-
-    public void orderHouse(String cardNumber, String month, String year, String cardHolder, String cvc) {
-        this.cardNumber.setValue(cardNumber);
-        this.month.setValue(month);
-        this.year.setValue(year);
-        this.cardHolder.get(3).setValue(cardHolder);
-        this.cvc.setValue(cvc);
+    // Метод который принимает данные формы и вводит их в поля
+    public static void enteringInputFields(String cardNumb, String months, String years, String cardHolders, String cvC) {
+        cardNumber.setValue(cardNumb);
+        month.setValue(months);
+        year.setValue(years);
+        cardHolder.get(3).setValue(cardHolders);
+        cvc.setValue(cvC);
     }
 
-    public void clickBuyByCard() {
-        form.click();
-    }
-
-    public void clickBuyCredit() {
-        formCredit.click();
-    }
 
     public void clickOrderButton() {
         orderButton.click();
+    }
+
+
+    public void successBuy() {
+        successBuy.shouldBe(Condition.visible, Duration.ofSeconds(10));
+    }
+
+    public void rejected() {
+        rejected.shouldBe(Condition.visible, Duration.ofSeconds(10));
+    }
+
+    // Используется только при одном пустом поле, для любого поля. Так как у локаторов нет тестовых классов.
+    public void checkEmptyFieldErrorForCheckingOneField() {
+        notifications.get(0).shouldBe(Condition.visible).shouldHave(Condition.text("Неверный формат"));
+    }
+
+    public void checkEmptyFieldMothError() {
+        notifications.get(1).shouldBe(Condition.visible).shouldHave(Condition.text("Неверный формат"));
+    }
+
+    public void checkEmptyFieldYearError() {
+        notifications.get(2).shouldBe(Condition.visible).shouldHave(Condition.text("Неверный формат"));
+    }
+
+    public void checkEmptyFieldHolderError() {
+        notifications.get(3).shouldBe(Condition.visible).shouldHave(Condition.text("Поле обязательно для заполнения"));
+    }
+
+    public void checkEmptyFieldCvcError() {
+        notifications.get(4).shouldBe(Condition.visible).shouldHave(Condition.text("Неверный формат"));
+    }
+
+    public void checkFieldMothErrorWithInvalidValue() {
+        notifications.get(0).shouldBe(Condition.visible).shouldHave(Condition.text("Неверно указан срок действия карты"));
+    }
+
+    public void checkFieldYearErrorWithInvalidValue() {
+        notifications.get(0).shouldBe(Condition.visible).shouldHave(Condition.text("Истёк срок действия карты"));
+    }
+
+    public void checkEmptyFieldErrorNotification() {
+        notifications.get(0).shouldBe(Condition.visible).shouldHave(Condition.text("Поле обязательно для заполнения"));
     }
 }
