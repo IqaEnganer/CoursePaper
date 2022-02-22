@@ -1,1 +1,0 @@
-{"uuid":"6c81061a-7076-4d32-a515-030ecbac8908","name":"shouldNotificationWillAppearEmptyCardNumberField()","children":["da63f384-36f7-477e-9b8c-e4dec8911d4b"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1644257031680,"stop":1644257031714}],"afters":[],"start":1644257031679,"stop":1644257032587}

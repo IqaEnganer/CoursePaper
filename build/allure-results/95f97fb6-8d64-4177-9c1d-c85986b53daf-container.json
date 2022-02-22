@@ -1,1 +1,0 @@
-{"uuid":"95f97fb6-8d64-4177-9c1d-c85986b53daf","name":"ShouldAppearInTheDatabaseWithStatus()","children":["ffbf9464-90f2-4581-96ea-898a7daa57da"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1644257046673,"stop":1644257046706}],"afters":[],"start":1644257046671,"stop":1644257047669}

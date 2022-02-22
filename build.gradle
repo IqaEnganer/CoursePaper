@@ -5,7 +5,7 @@ plugins {
 
 }
 
-sourceCompatibility = 11
+
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -14,8 +14,8 @@ allure {
     version = '2.16.1'
 }
 
-
 // кодировка файлов (если используете русский язык в файлах)
+sourceCompatibility = 11
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 

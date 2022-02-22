@@ -96,11 +96,12 @@ public class TestBuyTour {
 
 
     }
+
     //////Проверка валидации полей в форме покупки по карте//////
     @Name("Пустое поле номер карты" +
             "Должно появится уведомление 'Поле обязательно для заполнения'")
     @Test
-    void  shouldNotificationAppearUnderTheCardNumberFieldBuyByCard() {
+    void shouldNotificationAppearUnderTheCardNumberFieldBuyByCard() {
         Dashboard.clickButtonBuyByCard();
         enteringInputFields(
                 "",
@@ -114,10 +115,6 @@ public class TestBuyTour {
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
 
     }
-
-
-
-
 
     @Name("Ввод символов в поле номер карты" +
             "Должно появится уведомление 'Поле обязательно для заполнения' так как поле принимает только цифры")
@@ -151,7 +148,6 @@ public class TestBuyTour {
         buyingTour.clickOrderButton();
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
     }
-
 
     @Name("Пустое поле МЕСЯЦ" +
             "Должно появится уведомление под полем МЕСЯЦ 'Поле обязательно для заполнения'")
@@ -217,7 +213,6 @@ public class TestBuyTour {
         buyingTour.clickOrderButton();
         buyingTour.checkFieldMothErrorWithInvalidValue();
     }
-
 
     @Name("Проверка поля год: Пустое поле " +
             "Должно появится уведомление под полем ГОД 'Поле обязательно для заполнения'")
@@ -303,8 +298,7 @@ public class TestBuyTour {
 
 
     @Name("Проверка поля Владелец: Ввод символов" +
-            "Должно появится уведомление под полем ВЛАДЕЛЕЦ 'Неверный формат' " +
-            ", и проверка отсутствия новой записи в бд") //
+            "Должно появится уведомление под полем ВЛАДЕЛЕЦ 'Поле обязательно для заполнения' ")
     @Test
     void shouldNotificationAboutAnEmptyHolderFieldWillAppearBuyByCard1() {
         Dashboard.clickButtonBuyByCard();
@@ -319,10 +313,8 @@ public class TestBuyTour {
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
     }
 
-
     @Name("Проверка поля CVC: Пустое поле" +
-            "Должно появится уведомление под полем CVC 'Поле обязательно для заполнения' " +
-            ", и проверка отсутствия новой записи в бд") //
+            "Должно появится уведомление под полем CVC 'Поле обязательно для заполнения' ") //
     @Test
     void shouldNotificationAboutAnEmptyCVCFieldWillAppearBuyByCard0() {
         Dashboard.clickButtonBuyByCard();
@@ -405,7 +397,7 @@ public class TestBuyTour {
     @Name("Пустое поле номер карты" +
             "Должно появится уведомление 'Поле обязательно для заполнения'")
     @Test
-    void  shouldNotificationAppearUnderTheCardNumberField() {
+    void shouldNotificationAppearUnderTheCardNumberField() {
         Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 "",
@@ -502,7 +494,7 @@ public class TestBuyTour {
         buyingTour.checkFieldMothErrorWithInvalidValue();
     }
 
-    @Name("Проверка поля месяц " +
+    @Name("Проверка поля месяц  со значением 00" +
             "Должно появится уведомление под полем МЕСЯЦ 'Неверно указан срок действия карты'")
     @Test
     void shouldAppearNotificationAboutAnIncorrectFormat1() {
@@ -576,7 +568,7 @@ public class TestBuyTour {
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
-               "00",
+                "00",
                 validDataWithCardApproved.cardHolder,
                 validDataWithCardApproved.cvc
         );
@@ -650,7 +642,6 @@ public class TestBuyTour {
         buyingTour.clickOrderButton();
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
     }
-
 
 
 }

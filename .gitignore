@@ -1,9 +1,8 @@
 Thumbs.db*
-.DS_Store*
+.DS_Store
 HELP.md
-../../CoursePaper/.gradle
-target/
-./src/main/java/comparators/ReverseCollection.java
+.gradle
+build/
 
 ### STS ###
 .apt_generated
@@ -13,8 +12,6 @@ target/
 .settings
 .springBeans
 .sts4-cache
-build
-.gradle
 
 ### IntelliJ IDEA ###
 .idea
@@ -43,7 +40,6 @@ out/
 *.rar
 
 ### Exclusions ###
-!gradle/wrapper/gradle-wrapper.jar
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
