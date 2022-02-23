@@ -45,7 +45,7 @@ public class Sql {
             return statusCheck.getStatus();
         }
     }
-    // Неиспользуется.
+    // Не используется.
     // Чек общего кол-ва записей в бд.
     @SneakyThrows
     public static long getNumberOfRawsFromOrderEntity() {
@@ -61,7 +61,7 @@ public class Sql {
         }
         return numberOfRaws;
     }
-    //Методы для удаление всех записей из таблиц бд.
+    //Методы для удаления всех записей из таблиц бд.
     @SneakyThrows
     public static void deleteAllStringsForPaymentEntity() {
         try (Connection conn = DriverManager.getConnection(url, user, pass)) {
