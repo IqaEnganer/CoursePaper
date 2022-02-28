@@ -12,9 +12,10 @@ public class Sql {
     public Sql() {
     }
 
-    private static final String url = System.getenv("url");
-    private static final String user = "user";
-    private static final String pass = "pass";
+
+    private static final String url = System.getProperty("db.url");
+    private static final String user = System.getProperty("db.user");
+    private static final String pass = System.getProperty("db.password");
 
 
     @AllArgsConstructor
@@ -29,7 +30,7 @@ public class Sql {
     public static String checkStatus() {
         var runner = new QueryRunner();
         var status = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
-        try (var conn = DriverManager.getConnection(url, user, pass)){
+        try (var conn = DriverManager.getConnection(url, user, pass)) {
             var statusCheck = runner.query(conn, status, new BeanHandler<>(StatusResponse.class));
             return statusCheck.getStatus();
         }
@@ -45,6 +46,7 @@ public class Sql {
             return statusCheck.getStatus();
         }
     }
+
     // Не используется.
     // Чек общего кол-ва записей в бд.
     @SneakyThrows
@@ -61,6 +63,7 @@ public class Sql {
         }
         return numberOfRaws;
     }
+
     //Методы для удаления всех записей из таблиц бд.
     @SneakyThrows
     public static void deleteAllStringsForPaymentEntity() {

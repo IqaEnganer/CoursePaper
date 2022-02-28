@@ -11,9 +11,9 @@ import sql.Sql;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static pages.BuyingTour.*;
+import static pages.BuyingTour.enteringInputFields;
 
-public class TestBuyTour {
+public class TestBuyCredit {
 
     private final DataHelper.CardInfo invalidData = DataHelper.getInvalidDataCard();
     private final DataHelper.CardInfo validDataWithCardApproved = DataHelper.getValidDataCard(DataHelper.getValidCardNumberApproved());
@@ -31,7 +31,7 @@ public class TestBuyTour {
             "Проверка отображение уведомлений о пустых полях и их корректность")
     @Test
     public void shouldBeNotificationsDisplayedForAllFields() {
-        Dashboard.clickButtonBuyByCard();
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 "",
                 "",
@@ -49,37 +49,13 @@ public class TestBuyTour {
         buyingTour.checkEmptyFieldCvcError();
     }
 
-    /////////// Тесты покупки по карте ///////////
-    @Name("Проверка успешной покупки по карте" +
-            "Должен появится в базе данных ПОКУПОК со статусом ОДОБРЕНО. Так же UI проверка на успешность покупки")
+    @Name("Проверка отказа покупки в кредит" +
+            "Должен появится в базе данных ПОКУПОК В КРЕДИТ со статусом ОТКЛОНЕНО. Так же UI проверка на отказ от банка")
     @Test
-    public void shouldAppearInTheDatabaseWithStatusApproved() {
-        //Удаление всех записей в бд из таблицы покупка по карте
-        Sql.deleteAllStringsForPaymentEntity();
-        Dashboard.clickButtonBuyByCard();
-        enteringInputFields(
-                validDataWithCardApproved.cardNumber,
-                validDataWithCardApproved.moth,
-                validDataWithCardApproved.year,
-                validDataWithCardApproved.cardHolder,
-                validDataWithCardApproved.cvc
-        );
-        buyingTour.clickOrderButton();
-        //UI Проверка уведомления об успешной операции
-        buyingTour.successBuy();
-        // Сравнение статуса последней записи в бд.
-        assertEquals("APPROVED", Sql.checkStatus());
-
-
-    }
-
-    @Name("Проверка отказа покупки" +
-            "Должен появится в базе данных ПОКУПОК со статусом ОТКЛОНЕНО. Так же UI проверка на отказ от банка")
-    @Test
-    public void shouldAppearInTheDatabaseWithStatusDeclined() {
-        //Удаление всех записей в бд из таблицы покупка по карте
-        Sql.deleteAllStringsForPaymentEntity();
-        Dashboard.clickButtonBuyByCard();
+    public void shouldAppearInTheDatabaseCreditWithStatusDeclined() {
+        //Удаление всех записей в бд из таблицы покупка в кредит
+        Sql.deleteAllStringsForCreditRequestEntity();
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardDeclined.cardNumber,
                 validDataWithCardDeclined.moth,
@@ -88,20 +64,43 @@ public class TestBuyTour {
                 validDataWithCardDeclined.cvc
         );
         buyingTour.clickOrderButton();
-        //UI Проверка уведомления об отказе.
+        //Проверка уведомления об отказе.
         buyingTour.rejected();
-        // Сравнение статуса последней записи в бд.
-        assertEquals("DECLINED", Sql.checkStatus());
-
+        assertEquals("DECLINED", Sql.checkStatusCredit());
 
     }
 
-    //////Проверка валидации полей в форме покупки по карте//////
+
+    @Name("Проверка успешной покупки в кредит" +
+            "Должен появится в базе данных ПОКУПОК В КРЕДИТ со статусом ОДОБРЕНО." +
+            " Так же UI проверка на одобрение от банка")
+    @Test
+    public void shouldAppearInTheDatabaseCreditWithStatusApproved() {
+        //Удаление всех записей в бд из таблицы покупка в кредит
+        Sql.deleteAllStringsForCreditRequestEntity();
+        Dashboard.clickButtonBuyCreditCard();
+        enteringInputFields(
+                validDataWithCardApproved.cardNumber,
+                validDataWithCardApproved.moth,
+                validDataWithCardApproved.year,
+                validDataWithCardApproved.cardHolder,
+                validDataWithCardApproved.cvc
+        );
+        buyingTour.clickOrderButton();
+        buyingTour.successBuy();
+        assertEquals("APPROVED", Sql.checkStatusCredit());
+
+
+    }
+    /////////// Конец тестов на валидных значениях///////////
+
+
+    ///////////Тесты на валидации полей в форме покупки в кредит///////////
     @Name("Пустое поле номер карты" +
             "Должно появится уведомление 'Поле обязательно для заполнения'")
     @Test
-    void shouldNotificationAppearUnderTheCardNumberFieldBuyByCard() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAppearUnderTheCardNumberField() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 "",
                 validDataWithCardApproved.moth,
@@ -118,8 +117,8 @@ public class TestBuyTour {
     @Name("Ввод символов в поле номер карты" +
             "Должно появится уведомление 'Поле обязательно для заполнения' так как поле принимает только цифры")
     @Test
-    void shouldAppearAnIncorrectFormatNotificationUnderTheCardNumbFieldBuyByCard0() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldAppearAnIncorrectFormatNotificationUnderTheCardNumbField0() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 DataHelper.getInvalidSymbols(),
                 validDataWithCardApproved.moth,
@@ -135,8 +134,8 @@ public class TestBuyTour {
     @Name("Ввод в поле НОМЕР КАРТЫ значение с одной цифрой" +
             "Должно появится уведомление под полем НОМЕР КАРТЫ 'Неверный формат'")
     @Test
-    void shouldAppearAnIncorrectFormatNotificationUnderTheCardNumbFieldBuyByCard1() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldAppearAnIncorrectFormatNotificationUnderTheCardNumbField1() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 "5",
                 validDataWithCardApproved.moth,
@@ -148,11 +147,12 @@ public class TestBuyTour {
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
     }
 
+
     @Name("Пустое поле МЕСЯЦ" +
             "Должно появится уведомление под полем МЕСЯЦ 'Поле обязательно для заполнения'")
     @Test
-    void shouldNotificationAboutAnEmptyMonthFieldWillAppearBuyByCard() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyMonthFieldWillAppear0() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 "",
@@ -165,11 +165,10 @@ public class TestBuyTour {
     }
 
     @Name("Ввод символов в поле МЕСЯЦ" +
-            "Должно появится уведомление под полем МЕСЯЦ 'Поле обязательно для заполнения'" +
-            "так как поле принимает только цифры ")
+            "Должно появится уведомление под полем МЕСЯЦ 'Поле обязательно для заполнения'")
     @Test
-    void shouldNotificationAboutAnEmptyMonthFieldWillAppearBuyByCard1() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyMonthFieldWillAppear1() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 DataHelper.getInvalidSymbols(),
@@ -184,8 +183,8 @@ public class TestBuyTour {
     @Name("Проверка поля месяц " +
             "Должно появится уведомление под полем МЕСЯЦ 'Неверно указан срок действия карты'")
     @Test
-    void shouldAppearNotificationAboutAnIncorrectFormatBuyByCard0() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldAppearNotificationAboutAnIncorrectFormat0() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 "13",
@@ -197,11 +196,11 @@ public class TestBuyTour {
         buyingTour.checkFieldMothErrorWithInvalidValue();
     }
 
-    @Name("Проверка поля месяц" +
+    @Name("Проверка поля месяц  со значением 00" +
             "Должно появится уведомление под полем МЕСЯЦ 'Неверно указан срок действия карты'")
     @Test
-    void shouldAppearNotificationAboutAnIncorrectFormatBuyByCard1() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldAppearNotificationAboutAnIncorrectFormat1() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 "00",
@@ -213,11 +212,12 @@ public class TestBuyTour {
         buyingTour.checkFieldMothErrorWithInvalidValue();
     }
 
+
     @Name("Проверка поля год: Пустое поле " +
             "Должно появится уведомление под полем ГОД 'Поле обязательно для заполнения'")
     @Test
-    void shouldNotificationAboutAnEmptyYearFieldWillAppearBuyByCard() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyYearFieldWillAppear0() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -233,8 +233,8 @@ public class TestBuyTour {
             "Должно появится уведомление под полем ГОД 'Поле обязательно для заполнения' " +
             "так как поле должно принимать только цифры")
     @Test
-    void shouldNotificationAboutAnEmptyYearFieldWillAppearBuyByCard1() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyYearFieldWillAppear1() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -249,12 +249,12 @@ public class TestBuyTour {
     @Name("Проверка поля год: Ввод года меньше текущего на 1" +
             "Должно появится уведомление под полем ГОД 'Истёк срок действия карты' ")
     @Test
-    void shouldNotificationAboutAnEmptyYearFieldWillAppearBuyByCard2() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyYearFieldWillAppear2() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
-                invalidData.year,
+                invalidData.getYear(),
                 validDataWithCardApproved.cardHolder,
                 validDataWithCardApproved.cvc
         );
@@ -265,8 +265,8 @@ public class TestBuyTour {
     @Name("Проверка поля год: Ввод 00 " +
             "Должно появится уведомление под полем ГОД 'Истёк срок действия карты'")
     @Test
-    void shouldNotificationAboutAnEmptyYearFieldWillAppearBuyByCard3() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyYearFieldWillAppear3() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -282,8 +282,8 @@ public class TestBuyTour {
     @Name("Проверка поля Владелец: Пустое поле " +
             "Должно появится уведомление под полем ВЛАДЕЛЕЦ 'Поле обязательно для заполнения' ")
     @Test
-    void shouldNotificationAboutAnEmptyHolderFieldWillAppearBuyByCard() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyHolderFieldWillAppear() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -297,10 +297,10 @@ public class TestBuyTour {
 
 
     @Name("Проверка поля Владелец: Ввод символов" +
-            "Должно появится уведомление под полем ВЛАДЕЛЕЦ 'Поле обязательно для заполнения' ")
+            "Должно появится уведомление под полем ВЛАДЕЛЕЦ 'Неверный формат' ")
     @Test
-    void shouldNotificationAboutAnEmptyHolderFieldWillAppearBuyByCard1() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyHolderFieldWillAppear1() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -312,11 +312,12 @@ public class TestBuyTour {
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
     }
 
+
     @Name("Проверка поля CVC: Пустое поле" +
-            "Должно появится уведомление под полем CVC 'Поле обязательно для заполнения' ") //
+            "Должно появится уведомление под полем CVC 'Поле обязательно для заполнения' ")
     @Test
-    void shouldNotificationAboutAnEmptyCVCFieldWillAppearBuyByCard0() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyCVCFieldWillAppear() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -331,8 +332,8 @@ public class TestBuyTour {
     @Name("Проверка поля CVC: значение с 2 цифрами" +
             "Должно появится уведомление под полем CVC 'Неверный формат' ")
     @Test
-    void shouldNotificationAboutAnEmptyCVCFieldWillAppearBuyByCard1() {
-        Dashboard.clickButtonBuyByCard();
+    void shouldNotificationAboutAnEmptyCVCFieldWillAppear1() {
+        Dashboard.clickButtonBuyCreditCard();
         enteringInputFields(
                 validDataWithCardApproved.cardNumber,
                 validDataWithCardApproved.moth,
@@ -343,6 +344,4 @@ public class TestBuyTour {
         buyingTour.clickOrderButton();
         buyingTour.checkEmptyFieldErrorForCheckingOneField();
     }
-
 }
-

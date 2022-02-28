@@ -9,5 +9,16 @@ services:
       - MYSQL_USER=user
       - MYSQL_PASSWORD=pass
       - MYSQL_DATABASE=app
-
-
+  postgres:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+  node-app:
+    build: /gate-simulator
+    image: node-app:1.0
+    ports:
+      - '9999:9999'
